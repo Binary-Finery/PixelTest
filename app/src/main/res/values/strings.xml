@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pixel Perfect</string>
+    <string name="delay">Set transisition delay</string>
+    <string name="start">Begin Test</string>
+    <string name="default_delay">5 Seconds</string>
+    <string name="title_activity_testing">TestingActivity</string>
+</resources>

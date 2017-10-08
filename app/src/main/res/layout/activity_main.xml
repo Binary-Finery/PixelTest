@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_colour"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="spencerstudios.com.pixeltest.MainActivity">
+
+    <io.ghyeok.stickyswitch.widget.StickySwitch
+        android:id="@+id/sticky_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:ss_animationDuration="600"
+        app:ss_animationType="line"
+        app:ss_iconPadding="16dp"
+        app:ss_iconSize="24dp"
+        app:ss_leftIcon="@mipmap/ic_touch_app_white_24dp"
+        app:ss_leftText="Manual"
+        app:ss_rightIcon="@mipmap/ic_android_white_24dp"
+        app:ss_rightText="Auto"
+        app:ss_selectedTextSize="14sp"
+        app:ss_sliderBackgroundColor="@color/colorAccent"
+        app:ss_switchColor="@color/switch_background_color"
+        app:ss_textColor="@color/colorAccent"
+        app:ss_textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/seek_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/delay"
+            android:textColor="@color/text_color" />
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_delay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/text_color" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="sans-serif-thin"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:text="@string/start"
+        android:textColor="@color/text_color" />
+
+</LinearLayout>
